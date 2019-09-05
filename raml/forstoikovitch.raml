@@ -1,0 +1,18 @@
+#%RAML 1.0
+title: ForStoikovitch
+mediaType: application/json
+
+uses:
+  Types: types/library.raml
+resourceTypes:
+  myType:
+    post:
+      body:
+        example:
+        type: Types.MyType
+      responses:
+        204:
+
+
+/myType:
+  type: myType
